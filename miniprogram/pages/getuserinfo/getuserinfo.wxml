@@ -1,0 +1,22 @@
+<!--pages/getuserinfo/getuserinfo.wxml-->
+<van-button type="waring" block bindtap = "upload">上传图片</van-button>
+<view>
+
+<image src="{{image_ur}}"></image>
+</view>
+
+<view>
+<button bindtap='search'>搜索</button>
+</view>
+
+<view>
+<button bindtap='sort_byinc'> 排序搜索</button>
+</view>
+
+<view>
+<button bindtap='fenlei'> 分类查询</button>
+</view>
+
+<view>
+<button bindtap='chaxun'> 查询</button>
+</view>

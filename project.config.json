@@ -1,0 +1,170 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false
+	},
+	"appid": "wxbedd98566615d6b9",
+	"projectname": "secondmall",
+	"libVersion": "2.6.4",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 18,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "fabu",
+					"pathName": "pages/fabu/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "xiangqing",
+					"pathName": "pages/xiangqing/xiangqing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "huiyuan",
+					"pathName": "pages/huiyuan/huiyuan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "reg",
+					"pathName": "pages/huiyuan/zhanghao/reg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "input_test",
+					"pathName": "input/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/huiyuan/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "getuserinfo",
+					"pathName": "pages/getuserinfo/getuserinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "fenlei",
+					"pathName": "pages/fenlei/fenlei",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "publish",
+					"pathName": "pages/publish/publish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mypage",
+					"pathName": "pages/huiyuan/mypage/mypage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shoucang",
+					"pathName": "pages/huiyuan/shoucang/shoucang",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "xiangxi",
+					"pathName": "pages/chanpin/xiangxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "chanpin_list",
+					"pathName": "pages/gongyong/chanpin_list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mpg",
+					"pathName": "pages/huiyuan/mypage/mypage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "dingdan_list",
+					"pathName": "pages/huiyuan/dingdan/dingdan_list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "msglist",
+					"pathName": "pages/msglist/msglist",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

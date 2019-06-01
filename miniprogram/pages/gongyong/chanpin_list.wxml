@@ -1,0 +1,33 @@
+<form bindsubmit='chaxun'>
+
+  <view class='search-bar'>
+    <input type='text' maxlength='12' placeholder='请输入关键字' name="neirong" />
+    <button form-type='submit'>查询</button>
+  </view>
+<!--
+  <view class='filter-tab'>
+    <picker bindchange='p1' name="pic1" value='{{index}}' range='{{navList}}' range-key='name'>
+      <text>分类：{{fenlei}}</text>
+    </picker>
+
+    <picker bindchange='p1' name="pic1" value='{{index}}' range='{{navList}}' range-key='name'>
+      <text>品牌</text>
+    </picker>
+  </view>
+-->
+  <scroll-view scroll-y style='height:{{winHeight-80}}px'>
+    <view class='zuixin'>
+      <block wx:for="{{zuixins}}" wx:key="*this">
+        <navigator url='/pages/chanpin/xiangxi?cpid={{item.cp_id}}&cpmc={{item.cp_mingcheng}}' class='zuixin-item'>
+          <image src='{{item.u_fileID}}' mode='widthFix' class='zuixin-img'></image>
+          <text class='zuixin-mc'>{{item.gtitle}}</text>
+          <view>
+            <text class='zuixin-jiage0'>¥</text>
+            <text class='zuixin-jiage1'>{{item.gprice}}</text>
+            <text class='zuixin-jiage2'>{{item.add_date}}</text>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </scroll-view>
+</form>

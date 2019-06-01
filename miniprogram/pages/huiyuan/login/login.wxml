@@ -1,0 +1,25 @@
+<form bindsubmit="toLogin" bindreset="formReset">
+  <view class='denlgu'>
+
+    <text class='shuoming'>请输入您的会员账号</text>
+
+    <view class="form-wrap">
+      <view class="flex-wrap input-wrap">
+        <text class="label">账号</text>
+        <input value="" id="username" class="account-info-input" name="phone" />
+      </view>
+      <view class="flex-wrap input-wrap">
+        <text class="label">密码</text>
+        <input password id="password" class="account-info-input" name="pwd" />
+      </view>
+    </view>
+
+    <text class='shuoming'>请准确填写账号信息，有问题联系客服</text>
+    <button class='mysubmit' type='primary' form-type='submit'>登陆</button>
+    <button class='mysubmit' type='primary' bindtap='toReg'>注册新用户</button>
+
+     <!-- <button open-type='getUserInfo' bindgetuserinfo='getWxInfo' class='wx' lang="zh_CN" >微信登陆</button> -->
+
+  </view>
+
+</form>

@@ -1,0 +1,48 @@
+<view class='fenlei'>
+
+  <!-- 左侧分类 -->
+  <view class="zuo" style="height:{{winHeight}}px">
+    <block wx:for="{{navList}}" wx:key="*this">
+      <text class="type-nav {{curNav == item.id ? 'selected' : ''}}" bindtap="selectNav" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}
+      </text>
+    </block>
+  </view>
+
+<scroll-view 
+  scroll-y style="height: {{winHeight}}px;"  class='zuixin'
+>
+
+<block wx:for="{{zuixins}}"  wx:key="*this">
+<navigator url='/pages/chanpin/xiangxi?cpid={{item.cp_id}}&cpmc={{item.cp_mingcheng}}' class='paihang-item'>
+  <view class='paihang-tupian'>
+    <image class='paihang-img' src='{{item.cp_tupian}}' mode='widthFix'></image>
+  </view>
+  <view class='paihang-xinxi'>
+    <text class='paihang-mingcheng'>{{item.cp_mingcheng}}</text>
+    <text class='paihang-jianjie'>产品简介</text>
+    <view>
+      <text class='paihang-xuhao'>No.{{index+1}}</text>
+      <text class='paihang-xiaoshou'> | 456人付款 | </text>
+      <text class='paihang-jiage0'> ¥</text>
+      <text class='paihang-jiage1'> {{item.jiage}}</text>
+    </view>
+  </view>
+</navigator>
+</block>
+ 
+
+</scroll-view>
+
+
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+</view>

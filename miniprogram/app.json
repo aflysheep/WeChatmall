@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/huiyuan/login/login",
+    "pages/index/index",
+    "pages/fabu/index",
+    "pages/getuserinfo/getuserinfo",
+    "pages/wode/index",
+    "pages/search/search",
+    "pages/dingdan/dingdan",
+    "pages/shoucang/shoucang",
+    "pages/yifabu/yifabu",
+    "pages/souhuodizhi/souhuodizhi",
+    "pages/kefu/kefu",
+    "pages/question/question",
+    "pages/xiangqing/xiangqing",
+    "pages/huiyuan/huiyuan",
+    "pages/huiyuan/zhanghao/reg",
+    "input/index/index",
+    "pages/fenlei/fenlei",
+    "pages/publish/publish",
+    "pages/huiyuan/mypage/mypage",
+    "pages/huiyuan/dingdan/dingdan_list",
+    "pages/huiyuan/shoucang/shoucang",
+    "pages/chanpin/xiangxi",
+    "pages/huiyuan/dizhi/dizhi",
+    "pages/gongyong/chanpin_list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008080",
+    "navigationBarTitleText": "校园二手商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images_1/souye.png",
+        "selectedIconPath": "images_1/souye_selected.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "images_1/fabu.png",
+        "selectedIconPath": "images_1/fabu_selected.png"
+      },
+      {
+        "pagePath": "pages/huiyuan/mypage/mypage",
+        "text": "我的",
+        "iconPath": "images_1/wode.png",
+        "selectedIconPath": "images_1/wode_selected.png"
+      }
+    ]
+  }
+}

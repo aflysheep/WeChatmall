@@ -1,0 +1,73 @@
+.homeView {
+  border-top: 1px solid #ededed;
+}
+
+.listView {
+  padding-bottom: 50px;
+  
+}
+
+.listView>view {
+  padding: 10px;
+ 
+}
+
+.rightView {
+  text-align: right;
+}
+
+.imgmsgleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+   padding: 10rpx 10rpx 50rpx 50rpx;
+}
+
+.imgmsgleft>view:last-child {
+  border: solid 1px gray;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.imgmsg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.imgmsg>view:first-child {
+  border: solid 1px gray;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(0, 204, 255);
+}
+
+.touimg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.name {
+  font-size: 14px;
+  color: gray;
+}
+
+.sendView {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  border-top: 1px #ededed solid;
+  background-color: white;
+}
+
+.sendView>button {
+  width: 20%;
+}
+
+.sendView>input {
+  width: 80%;
+  height: auto;
+}

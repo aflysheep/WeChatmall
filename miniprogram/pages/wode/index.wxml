@@ -1,0 +1,35 @@
+<van-cell
+  icon="coupon-o"
+  title="我的订单"
+  is-link
+/>
+
+<van-cell
+  icon="cart-circle-o"
+  title="我的收藏"
+  is-link
+/>
+
+<van-cell
+  icon="coupon-o"
+  title="我发布的商品"
+  is-link
+/>
+
+<van-cell
+  icon="coupon-o"
+  title="收货地址管理"
+  is-link
+/>
+
+<van-cell
+  icon="coupon-o"
+  title="联系客服"
+  is-link
+/>
+
+<van-cell
+  icon="coupon-o"
+  title="常见问题"
+  is-link
+/>

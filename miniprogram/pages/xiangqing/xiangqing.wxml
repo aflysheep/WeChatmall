@@ -1,0 +1,115 @@
+<scroll-view scroll-y style="height: {{winHeight-80}}px;" style="background-color: #f2f2f2;">
+
+  <view class="card-image-container">
+    <image src='{{goods_img}}'></image>
+  </view>
+
+  <view class="info-price clear">
+    <view class='price'>￥{{gprice}} </view>
+    <view class='fenxiang'>
+      <button class='fxbtn' open-type="share">
+        <view style='height:20px;margin-top:8px;'>
+          <image src='/img/fenxiang.png' mode="aspectFill"></image>
+        </view>
+        <view>分享</view>
+      </button>
+    </view>
+  </view>
+  <view class="info-title">
+    <text>{{goods_title}}</text>
+  </view>
+
+  <!-- <view style="border-top:1px solid #F6F6F6;background: #fff; padding:5px 15px;">
+  </view>
+  <block wx:if="{{pjDataList!=''}}">
+    <!--评价-->
+  <!-- <view class='pj_box'>
+      <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;"> -->
+  <!-- <view style='float:left;'>商品评价</view>
+        <view style='float:right;margin-left:2px;margin-top:-1px;'>
+          <image src="/img/ico_jt.png" class="ico_img_jt"></image>
+        </view>
+        <view style='float:right;font-size:12px;color:#A2A2A2;'>
+          <navigator url="pjList?id={{goods_id}}">查看全部</navigator>
+        </view> -->
+  <!-- <view class='clear'></view>
+      </view>
+      <block wx:for="{{pjDataList}}" wx:for-item="item" wx:key="pj">
+        <view class="list_item">
+          <view class='pj_u_info clear'>
+            <view class='header_img'>
+              <image src="{{item.headpic}}" mode="aspectFit"></image>
+            </view>
+            <view class='name'>{{item.author}}</view>
+            <view class='time'>{{item.add_time}}</view>
+          </view>
+          <view class='pj_cont'>
+            {{item.content}}
+          </view>
+        </view>
+      </block>
+    </view>
+  </block> -->
+  <!--商品详情-->
+  <view class='details_box'>
+    <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;">
+      <view>商品详情</view>
+    </view>
+    <view style='padding:10px 0px;'>
+      <view class="wxParse">
+        {{goods_info.content}}
+      </view>
+    </view>
+  </view>
+
+  <!--底部菜单-->
+  <view class='dibu'>
+    <view class='navs'>
+      <view class='nav-item' style='width:12%;' bindtap='toShouye'>
+        <image src="/img/sp01.png" class="nav-img" />
+        <text>首页</text>
+      </view>
+      <view class='nav-item' style='width:13%;' bindtap='shoucang'>
+        <image src="/img/sp02.png" class="nav-img" />
+        <text>收藏</text>
+      </view>
+      <view class='nav-item' style='width:15%;' bindtap='toGowuche'>
+        <image src="/img/sp03.png" class="nav-img" />
+        <text>购物车</text>
+      </view>
+      <view class='nav-item' style='width:33%;'>
+        <button class='bt01' bindtap='jiaGwc'>加入购物车</button>
+      </view>
+      <view class='nav-item' bindtap='goumai' style='width:27%;'>
+        <button class='bt02'>联系卖家</button>
+      </view>
+    </view>
+  </view>
+
+  <view class='pinglun'>
+    <form bindsubmit='textareasubmit' bindreset='textareareset'>
+      <!-- <view>输入区域高度自适应，不会出现滚动条</view>
+<textarea auto-height='{{true}}' name='t1'></textarea> -->
+
+      <!-- <view class='pinglun-biaoti'>评价</view> -->
+      <view class='pinglun-neirong'>
+        <textarea placeholder='请输入评论' style='height:3em;' name='comment' auto-focus="{{true}}"></textarea>
+      </view>
+      <!-- <button form-type='submit' class='pinglun-tijiao'>提交</button> -->
+    </form>
+  </view>
+
+  <block wx:for="{{pl}}">
+    <view class='pl'>
+      <view class='pl-yonghu'>
+        <view class='pl-nicheng'>用户名</view>
+        <view class='pl-shijian'>2018-9-2</view>
+      </view>
+      <view class='pl-xx'>
+        <image src='/images/selected.png' class='pl-img'></image>
+      </view>
+      <view class='pl-neirong'>评论内容</view>
+    </view>
+  </block>
+
+</scroll-view>

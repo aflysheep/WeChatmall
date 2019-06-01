@@ -1,0 +1,31 @@
+<form bindsubmit="zhuce" bindreset="formReset">
+
+  <view class='denlgu'>
+
+    <text class='shuoming'>请输入您的会员账号</text>
+
+    <view class="form-wrap">
+      <view class="flex-wrap input-wrap">
+        <text class="label">账号</text>
+        <input value="" id="aa" class="account-info-input" name="phone" />
+      </view>
+      <view class="flex-wrap input-wrap">
+        <text class="label">设置密码</text>
+        <input password id="bb" class="account-info-input" name="pwd1" />
+      </view>
+      <view class="flex-wrap input-wrap">
+        <text class="label">确认密码</text>
+        <input password id="cc" class="account-info-input" name="pwd2" />
+      </view>
+    </view>
+
+
+    <text wx:if="{{error}}" class='myred'>{{error}}</text>
+    <text class='shuoming'>请准确填写账号信息，有问题联系客服</text>
+    <button class='mysubmit' type='primary' form-type='submit'>注册账号</button>
+
+
+
+  </view>
+
+</form>

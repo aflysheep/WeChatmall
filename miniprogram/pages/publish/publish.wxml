@@ -1,0 +1,73 @@
+<!--pages/productReleased/productReleased.wxml-->
+<!--商品发布-->
+<form bindsubmit="formSubmit">
+  <!--商品名称-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品名称:</text>
+      <input name="title" type='text' value='{{title}}' bindblur='titleBlur'></input>
+    </view>
+  </view>
+  <!--商品价格-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品价格:</text>
+      <input name="price" type='number' value='{{price}}' bindblur='priceBlur'></input>
+    </view>
+  </view>
+  <!--商品信息-->
+  <view class='info-point'>
+    <view class='title_text'>
+      <text>商品描述:</text>
+      <textarea name="info" class='textarea' value='{{info}}' bindblur='infoBlur'></textarea>
+    </view>
+  </view>
+  <!--商品卖点-->
+  <view class='info-point'>
+    <view class='title_text'>
+      <text>联系方式:</text>
+      <textarea name="point" class='textarea' value='{{point}}' bindblur='pointBlur'></textarea>
+    </view>
+  </view>
+
+  <!--商品类别-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品分类:</text>
+      <picker name="classify" mode="selector" value='{{classify}}' range="{{classify}}"  bindchange="bindPickerChange">
+        <input name="state" type='text' value='{{classify[index]}}' disabled='true'></input>
+      </picker>
+      <span class='icon iconfont icon-weibiaoti34'></span>
+    </view>
+  </view>
+
+  <!--发布地址-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>发布地址:</text>
+      <picker name="dizhi" mode="selector" value='{{dizhi}}' range="{{dizhi}}" bindchange="bindPickerChange2">
+        <input name="dizhi" type='text' value='{{dizhi[index2]}}' disabled='true'></input>
+      </picker>
+      <span class='icon iconfont icon-weibiaoti34'></span>
+    </view>
+  </view>
+
+  <!--上传图片-->
+  <view class='upImv'>
+    <view class='upImv_text'>详情图片上传</view>
+    <view class="addImv">
+      <!--这个是已经选好的图片-->
+      <view wx:for="{{detail}}" wx:key="key" class="upFile" bindtap="showImageDetail" style="border-radius: 5px" data-id="{{index}}">
+        <image class="itemImv" src="{{item}}"></image>
+
+      </view>
+
+      <!--这个是选择图片-->
+      <view class="chooseView" bindtap="chooseDetail" wx:if="{{chooseViewShowDetail}}">
+        <image class="chooseImv" src="../../images/resource/add_pic.png"></image>
+      </view>
+    </view>
+
+  </view>
+  <button form-type='submit' class='sureRelease'>确认发布</button>
+</form>

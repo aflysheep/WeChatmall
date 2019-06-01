@@ -1,0 +1,15 @@
+<!-- link 模式，在右侧显示链接箭头 -->
+<van-notice-bar
+  color="#080808"
+  mode="link"
+  text="你好。"
+/>
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+<van-notice-bar
+color="#080808"
+  mode="link"
+  text="请问还在吗。"
+/>

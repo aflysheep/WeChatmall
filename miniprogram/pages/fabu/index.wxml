@@ -1,0 +1,67 @@
+<view>
+<view class="img_class">
+<image 
+src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=406739285,2346688279&fm=58"
+mode="aspectFit"
+>
+</image>
+</view>
+<view>
+<van-row gutter="10">
+  <van-col span="2" offset="10" round="true">
+  <van-button type="danger" size="mini">添加图片</van-button>
+  </van-col>
+</van-row>
+</view>
+
+
+
+
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="商品名称"
+    icon="question-o"
+    placeholder="请输入用户名"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ password }}"
+    type="password"
+    label="商品类别"
+    placeholder="请输入密码"
+    required
+    border="{{ false }}"
+  />
+
+    <van-field
+    value="{{ password }}"
+    type="password"
+    label="商品价格"
+    placeholder="请输入密码"
+    required
+    border="{{ false }}"
+  />
+
+    <van-field
+    value="{{ password }}"
+    type="password"
+    label="商品介绍"
+    placeholder="请输入密码"
+    required
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+
+
+<van-row gutter="10">
+  <van-col span="20" offset="2" round="true">
+  <van-button type="danger" size="normal">确认发布</van-button>
+  </van-col>
+</van-row>
+
+</view>

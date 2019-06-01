@@ -1,0 +1,32 @@
+<view class='qukuai'>
+  <view class='y01'></view>
+  <text class='t01'>我的发布</text>
+  <navigator class='m01'>下架</navigator>
+</view>
+
+<block wx:for="{{collection}}" wx:key="*this">
+<view class='sc'>
+  <navigator url='' class='sc-xiangmu'>
+    <view class='sc-tupian'>
+      <image class='sc-img' src="{{item[0].u_fileID}}" mode='widthFix'></image>
+    </view>
+    <view class='sc-xinxi'>
+      <view class='sc-shijian'> 发布时间:{{item[0].add_date}}</view>
+      <view class='sc-cpmc'>产品名称:{{item[0].gtitle}}</view>
+
+      <view>
+        <!-- <view class='sc-kucun'>卖家联系方式:{{item[0].gpoint}}</view> -->
+        <!-- <text class='sc-xiangou'> | 限购：| </text> -->
+        <text class='sc-jiage0'> ¥</text>
+        <text class='sc-jiage1'> {{item[0].gprice}}</text>
+      </view>
+    </view>
+
+  </navigator>
+  <view class='sc-del' data-scid='{{item[0]._id}}' bindtap='delete'>
+    下架
+  </view>
+
+</view>
+
+</block>

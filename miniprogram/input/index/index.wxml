@@ -1,0 +1,7 @@
+<view>  
+  text 文本输入键盘
+</view>
+
+<view>
+  <input type='text' name='t1'></input>
+</view>

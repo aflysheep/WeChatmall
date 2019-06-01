@@ -1,0 +1,96 @@
+<swiper indicator-dots='true' autoplay='true' interval='3000' duration='500'>
+  <swiper-item>
+    <!-- <image src='../../images/school/a.jpg' class='img01'></image> -->
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3086345479,2961573933&fm=27&gp=0.jpg' class='img01'></image>
+  </swiper-item>
+
+  <swiper-item>
+    <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3012308987,48148937&fm=27&gp=0.jpg' class='img01'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=883158617,2439270548&fm=27&gp=0.jpg' class='img01'></image>
+  </swiper-item>
+</swiper>
+
+<!-- <view class='outter'>
+<view class='inner'>1</view>
+<view class='inner'>2</view>
+</view> -->
+
+<view class="container">
+  <view class='white-group'>
+
+    <navigator url='/pages/gongyong/chanpin_list' class='menu-group'>
+      <image src='images/hot.png'></image>
+      <text>热门</text>
+    </navigator>
+
+    <navigator url='/pages/gongyong/chanpin_list?fenlei=学习' class='menu-group'>
+      <image src='images/learn.png'></image>
+      <text>学习</text>
+    </navigator>
+
+    <navigator url='/pages/gongyong/chanpin_list?fenlei=运动' class='menu-group'>
+      <image src='images/sport.png'></image>
+      <text>运动</text>
+    </navigator>
+
+    <navigator url='/pages/gongyong/chanpin_list?fenlei=生活' class='menu-group'>
+      <image src='images/life.png'></image>
+      <text>生活</text>
+    </navigator>
+
+    <!-- <view class='menu-group'>
+      <image src='images/sport.png'></image>
+      <text>运动</text>
+    </view> -->
+    <!-- <view class='menu-group'>
+      <image src='images/life.png'></image>
+      <text>生活</text>
+    </view> -->
+  </view>
+</view>
+
+
+<view class='qukuai'>
+  <view class='y01'></view>
+  <text class='t01'>最新上架产品</text>
+  <view class='m01'>更多></view>
+</view>
+
+<view class='zuixin'>
+
+  <!--navigator url='' class='zuixin-item'>
+    <image src='/tupian/cp01.jpg' mode='widthFix' class='zuixin-img'></image>
+    <text class='zuixin-mc'>产品名称0123456789788111aaaa</text>
+    <view>
+      <text class='zuixin-jiage0'>¥</text>
+      <text class='zuixin-jiage1'>188.00</text>
+      <text class='zuixin-jiage2'>456人付款</text>
+    </view>
+  </navigator>
+
+  <navigator url='' class='zuixin-item'>
+    <image src='/tupian/cp02.jpg' mode='widthFix' class='zuixin-img'></image>
+    <text class='zuixin-mc'>产品名称2</text>
+    <view>
+      <text class='zuixin-jiage0'>¥</text>
+      <text class='zuixin-jiage1'>166.00</text>
+      <text class='zuixin-jiage2'>536人付款</text>
+    </view>
+  </navigator-->
+
+  <block wx:for="{{zuixins}}" wx:key="*this">
+    <!-- <navigator url='/pages/xiangqing/xiangqing?cpid={{item._id}}&cpmc={{item.gtitle}}' class='zuixin-item'> -->
+    <navigator url='/pages/chanpin/xiangxi?cpid={{item._id}}&cpmc={{item.gtitle}}&phone={{item.gpoint}}' class='zuixin-item'>
+      <image src='{{item.u_fileID}}' mode='widthFix' class='zuixin-img'></image>
+      <text class='zuixin-mc'>{{item.gtitle}}</text>
+      <view>
+        <text class='zuixin-jiage0'>¥</text>
+        <text class='zuixin-jiage1'>{{item.gprice}}</text>
+        <text class='zuixin-jiage2'>{{item.add_date}}</text>
+      </view>
+    </navigator>
+  </block>
+
+</view>

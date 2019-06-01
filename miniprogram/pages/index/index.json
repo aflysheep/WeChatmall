@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "van-card": "vant-weapp/card",
+    "van-rate": "vant-weapp/rate"
+  }
+}

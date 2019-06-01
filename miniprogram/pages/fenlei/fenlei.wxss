@@ -1,0 +1,91 @@
+.fenlei{ 
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.zuo{
+	width:20%;
+	border-right: 1px solid #ddd;
+	font-size: .85rem; height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-nav{
+	position: relative;
+	text-align: center;
+  padding: 5px 0;
+	border-bottom: 1px solid #ddd;
+	z-index: 10;
+}
+.selected{
+	margin-right: -1px;
+	padding-left:-1px;
+	color: #333;
+	background-color: #fff;
+}
+
+/*销售排行*/
+.zuixin{width: 80%; background-color: white;}
+.paihang-item {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+}
+
+.paihang-tupian {
+  width: 30%;
+}
+
+.paihang-img {
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px gainsboro;
+}
+
+.paihang-xinxi {
+  width: 70%;
+  margin-left: 5px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.paihang-mingcheng {
+  font-size: 13px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.paihang-jianjie {
+  font-size: 11px;
+  color: gray;
+  margin: 3px 0;
+}
+
+.paihang-xuhao {
+  color: green;
+  font-size: 13px;
+}
+
+.paihang-xiaoshou {
+  font-size: 11px;
+  color: gray;
+}
+
+.paihang-jiage0 {
+  font-size: 10px;
+  color: red;
+}
+
+.paihang-jiage1 {
+  font-size: 13px;
+  color: red;
+}

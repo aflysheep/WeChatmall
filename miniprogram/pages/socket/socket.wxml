@@ -1,0 +1,38 @@
+<view class='homeView'>
+  <scroll-view scroll-y style="height:500px;" scroll-top='{{scrolltop}}'>
+    <view class='listView'>
+      <block wx:for="{{serverMsg}}" wx:key='*this'>
+        <!--  -->
+
+        <view wx:if="{{item.user.id!=userInfo.userId}}" class='leftView'>
+          <view class='name'>{{item.user.name}}</view>
+          <view>
+            <!-- 我这用的是自己另一个服务的图片 -->
+            <image class='touimg' src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1481892208,2233840498&fm=27&gp=0.jpg'></image>
+          </view>
+          <view class='imgmsgleft'>
+
+            <view>{{item.msg}}</view>
+          </view>
+        </view>
+
+
+        <view wx:else class='rightView'>
+          <view class='name'>{{item.user.name}}</view>
+          <view>
+            <!-- 我这用的是自己另一个服务的图片 -->
+            <image class='touimg' src='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3236468072,2333686161&fm=27&gp=0.jpg'></image>
+          </view>
+          <view class='imgmsg'>
+            <view >{{item.msg}}</view>
+
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class='sendView'>
+    <input bindinput='sendTextBind' placeholder="输入聊天内容" value='{{sendText}}' />
+    <button bindtap='sendBtn' type="primary">发送</button>
+  </view>
+</view>
